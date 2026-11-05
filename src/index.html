@@ -6,7 +6,7 @@
     <title>Helpdesk</title>
     <script type="module" src="script.js" defer></script>
 <style>
-    input, label{
+    input, label, button{
         margin:10px;
     }
 </style>
@@ -23,11 +23,12 @@
             <option value="normal" selected>Normal</option>
             <option value="high">High</option>
         </select><br>
+        <button type="submit">Dodaj</button>
+        <br><br>
         <label for="file">Plik: </label>
         <input type="file" id="file"><br>
-        <button type="submit">Dodaj</button>
+        <button id="import" type="button">Importuj z serwera</button>
     </form>
-<br>
     <p>
         <label for="filter">Filtr: </label>
         <select id="filter">
