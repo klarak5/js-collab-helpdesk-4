@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helpdesk</title>
-    <script src="script.js" defer></script>
+    <script type="module" src="script.js" defer></script>
+<style>
+    input, label{
+        margin:10px;
+    }
+</style>
 </head>
 <body>
     <h1>Helpdesk</h1>
 
     <form id="form">
         <label for="title">Tytuł: </label>
-        <input type="text" id="title" name="title">
+        <input type="text" id="title" name="title"><br>
         <label for="priority">Priorytet: </label>
         <select id="priority" name="priority">
             <option value="low">Low</option>
             <option value="normal" selected>Normal</option>
             <option value="high">High</option>
-        </select>
+        </select><br>
+        <label for="file">Plik: </label>
+        <input type="file" id="file"><br>
         <button type="submit">Dodaj</button>
     </form>
-
+<br>
     <p>
         <label for="filter">Filtr: </label>
         <select id="filter">
