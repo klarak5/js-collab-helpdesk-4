@@ -1,0 +1,21 @@
+
+[
+    {
+        "id": "1",
+        "title": "Problem z logowaniem",
+        "status": "new",
+        "priority": "high"
+    },
+    {
+        "id": "2",
+        "title": "Błąd wyświetlania strony",
+        "status": "doing",
+        "priority": "normal"
+    },
+    {
+        "id": "3",
+        "title": "Poprawa wyglądu formularza",
+        "status": "done",
+        "priority": "low"
+    }
+]
