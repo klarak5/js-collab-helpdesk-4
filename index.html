@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpdesk</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Helpdesk</h1>
+
+    <form id="form">
+        <label for="title">Tytuł: </label>
+        <input type="text" id="title" name="title">
+        <label for="priority">Priorytet: </label>
+        <select id="priority" name="priority">
+            <option value="low">Low</option>
+            <option value="normal" selected>Normal</option>
+            <option value="high">High</option>
+        </select>
+        <button type="submit">Dodaj</button>
+    </form>
+
+    <p>
+        <label for="filter">Filtr: </label>
+        <select id="filter">
+            <option value="all">All</option>
+            <option value="new">New</option>
+            <option value="doing">Doing</option>
+            <option value="done">Done</option>
+        </select>
+        <span id="counter"></span>
+    </p>
+
+    <p id="message" role="status"></p>
+    <ul id="list"></ul>
+    <p id="empty" hidden>Brak zgłoszeń dla wybranego filtra.</p>
+</body>
+</html>
