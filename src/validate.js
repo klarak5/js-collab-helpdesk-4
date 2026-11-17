@@ -8,7 +8,9 @@ export function validateTickets(raw) {
         throw new Error(`Za dużo zgłoszeń: ${raw.length} (limit ${MAX_TICKETS}).`);
     }
 
-    const result = raw.map((record, index) => {
+    // Array.from zamiast map: map pomija "dziury" w tablicy ([t1, , t3]),
+    // przez co pusty rekord przeszedłby walidację.
+    const result = Array.from(raw, (record, index) => {
         try {
             return normalizeTicket(record);
         } catch (error) {
