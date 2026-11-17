@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1",
+        "title": "Poprawne zgłoszenie",
+        "status": "new",
+        "priority": "low"
+    },
+    {
+        "id": "2",
+        "title": "X",
+        "status": "new",
+        "priority": "high"
+    }
+]

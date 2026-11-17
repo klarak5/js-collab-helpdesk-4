@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1",
+        "title": "Pierwsze zgłoszenie",
+        "status": "new",
+        "priority": "low"
+    },
+    {
+        "id": "1",
+        "title": "Drugie zgłoszenie",
+        "status": "done",
+        "priority": "high"
+    }
+]
