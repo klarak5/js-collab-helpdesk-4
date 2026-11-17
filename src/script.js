@@ -108,10 +108,6 @@ async function importFrom(load){
     }
 }
 
-importButton.addEventListener("click",()=>void importFrom(async()=>{
-    const response=await fetch("./tickets.json");
-    if(!response.ok)throw new Error(`HTTP ${response.status}`);
-    return await response.json();
-}));
+importButton.addEventListener("click",()=>void importFrom(async()));
 
 render();
