@@ -22,6 +22,10 @@ export function assertId(id) {
     if (typeof id !== 'string' || id.trim().length === 0 || id.length > MAX_ID_LENGTH) {
         throw new Error(`ID zgłoszenia musi być niepustym tekstem o długości do ${MAX_ID_LENGTH} znaków.`);
     }
+    // "1" i " 1" wyglądają tak samo w UI, ale Set uznałby je za różne ID.
+    if (id !== id.trim()) {
+        throw new Error('ID zgłoszenia nie może zaczynać się ani kończyć spacją.');
+    }
 }
 
 // Zwraca przycięty tytuł albo rzuca Error.
