@@ -1,13 +1,6 @@
 import {ticketsToJson} from "./export.js";
 import {addTicket, changeStatus, STATUSES} from "./domain.js";
 
-function throwTicketError(message) {
-    if (typeof globalThis.alert === 'function') {
-        globalThis.alert(message);
-    }
-    throw new Error(message);
-}
-
 let tickets = [];
 let filter = 'all';
 let nextId = 1;
