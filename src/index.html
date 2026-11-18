@@ -4,12 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helpdesk</title>
-    <script type="module" src="script.js" defer></script>
-<style>
-    input, label, button{
-        margin:10px;
-    }
-</style>
+    <script type="module" src="app.js" defer></script>
 </head>
 <body>
     <h1>Helpdesk</h1>
@@ -24,11 +19,13 @@
             <option value="high">High</option>
         </select><br>
         <button type="submit">Dodaj</button>
-        <br><br>
-        <label for="file">Plik: </label>
-        <input type="file" id="file"><br>
-        <button id="import" type="button">Importuj z serwera</button>
     </form>
+
+    <label for="file">Plik: </label>
+    <input type="file" id="file"><br>
+    <button id="import" type="button">Importuj z serwera</button>
+    <button id="export" type="button">Eksportuj JSON</button>
+
     <p>
         <label for="filter">Filtr: </label>
         <select id="filter">
