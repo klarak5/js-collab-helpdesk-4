@@ -1,0 +1,6 @@
+[
+  { "id": "1", "title": "Nie działa drukarka w sali 12", "status": "new", "priority": "high" },
+  { "id": "2", "title": "Projektor miga w auli", "status": "doing", "priority": "normal" },
+  { "id": "3", "title": "Brak dostępu do Wi-Fi w bibliotece", "status": "new", "priority": "normal" },
+  { "id": "4", "title": "Wymiana myszy w pracowni 5", "status": "done", "priority": "low" }
+]

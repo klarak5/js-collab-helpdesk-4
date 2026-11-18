@@ -1,0 +1,5 @@
+[
+  { "id": "1", "title": "Poprawne zgłoszenie", "status": "new", "priority": "low" },
+  { "id": "2", "title": "Też poprawne", "status": "doing", "priority": "normal" },
+  { "id": "3", "title": "Zły status", "status": "zamkniete", "priority": "high" }
+]

@@ -1,0 +1,5 @@
+[
+  { "id": "1", "title": "Pierwsze zgłoszenie", "status": "new", "priority": "low" },
+  { "id": "2", "title": "Drugie zgłoszenie", "status": "doing", "priority": "normal" },
+  { "id": "1", "title": "Duplikat ID", "status": "done", "priority": "high" }
+]
